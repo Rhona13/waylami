@@ -266,13 +266,14 @@ form input {
 
 .dash {
   width: 15%;
-  height: 100vh;
+  height: 101vh; /* Adjust this value to your desired fixed height */
   background-color: #00b594;
   float: left;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 
 .dash h1 {
   font-family: 'Moderustic', sans-serif;
@@ -357,7 +358,7 @@ form input {
   align-items: center;
   padding: 8px;
   padding-left: 20px;
-  padding-top: 32px;
+  padding-top: 40px;
 }
 
 .nav-all h1{
@@ -450,4 +451,68 @@ form input {
   font-weight: 700;
   font-size: 17px;
   font-style: normal;
+}
+
+.note-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px; /* Increased gap */
+  padding: 22px; /* Increased padding */
+}
+
+.note-card {
+  position: relative; /* Establish positioning context */
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 20px; /* Adjusted padding */
+  height: 230px; /* Adjusted height */
+}
+
+.note-card:hover{
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+  transform: translateY(-5px);
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between; /* Space between h3 and .Dots */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 16px; /* Space below the header */
+}
+
+.note-header h3 {
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.Dots {
+  font-family: 'Fira Sans', sans-serif;
+  margin-bottom: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.note-card p {
+  font-family: 'Fira Sans', sans-serif;
+  color: black;
+  flex: 1; /* Allow paragraph to take up remaining space */
+  font-weight: 300;
+  font-style: normal; 
+}
+
+.Date {
+  position: absolute; /* Absolute positioning */
+  bottom: 20px; /* Space from the bottom */
+  right: 20px; /* Space from the right */
+  font-family: 'Fira Sans', sans-serif;
+  color: gray;
+  font-weight: 50;
+  font-style: normal;
+  font-size: ;
 }
