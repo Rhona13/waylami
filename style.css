@@ -266,7 +266,7 @@ form input {
 
 .dash {
   width: 15%;
-  height: 101vh; /* Adjust this value to your desired fixed height */
+  height: 101vh; 
   background-color: #00b594;
   float: left;
   display: flex;
@@ -456,19 +456,19 @@ form input {
 .note-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px; /* Increased gap */
-  padding: 22px; /* Increased padding */
+  gap: 20px; 
+  padding: 22px; 
 }
 
 .note-card {
-  position: relative; /* Establish positioning context */
+  position: relative; 
   display: flex;
   flex-direction: column;
   background-color: white;
   border: 2px solid #ddd;
   border-radius: 8px;
-  padding: 20px; /* Adjusted padding */
-  height: 230px; /* Adjusted height */
+  padding: 20px; 
+  height: 230px; 
 }
 
 .note-card:hover{
@@ -479,9 +479,9 @@ form input {
 
 .note-header {
   display: flex;
-  justify-content: space-between; /* Space between h3 and .Dots */
-  align-items: center; /* Center items vertically */
-  margin-bottom: 16px; /* Space below the header */
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: 16px; 
 }
 
 .note-header h3 {
@@ -489,30 +489,106 @@ form input {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 600;
   font-style: normal;
+  margin-bottom:1px ;
+  margin-top: -15px;
+  
 }
 
 .Dots {
   font-family: 'Fira Sans', sans-serif;
-  margin-bottom: 20px;
-  font-weight: 600;
-  cursor: pointer;
+  margin-bottom: 20px;  
+  cursor: pointer ;
+  
 }
 
 .note-card p {
   font-family: 'Fira Sans', sans-serif;
   color: black;
-  flex: 1; /* Allow paragraph to take up remaining space */
+  flex: 1; 
   font-weight: 300;
   font-style: normal; 
 }
 
 .Date {
-  position: absolute; /* Absolute positioning */
-  bottom: 20px; /* Space from the bottom */
-  right: 20px; /* Space from the right */
-  font-family: 'Fira Sans', sans-serif;
-  color: gray;
-  font-weight: 50;
-  font-style: normal;
-  font-size: ;
+  position: absolute;
+  bottom: 10px; 
+  right: 20px; 
+  font-family: 'Arial', sans-serif;
+  color: lightgray;
+  font-size: 12px ; 
+  font-weight: 100;
 }
+
+.yellow-dot {
+  position: absolute;
+  bottom: 1px;
+  left: -100px;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(237, 146, 0);
+  border-radius: 50%;
+}
+
+
+
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 32px;
+    margin-left: 20px;
+  }
+
+  .home nav {
+    justify-content: center;
+    transform: translateX(0) translateY(-10px);
+  }
+
+  .home nav ul {
+    gap: 20px;
+  }
+
+  .home nav ul li a {
+    font-size: 16px;
+  }
+
+  .home-image1 img {
+    width: 300px;
+    height: 230px;
+  }
+
+  .note {
+    margin-left: 20px;
+    padding: 40px;
+  }
+
+  .note h2 {
+    font-size: 50px;
+  }
+
+  .note p {
+    font-size: 16px;
+  }
+
+  .tsk {
+    padding: 7px 30px;
+  }
+
+  .dash {
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+
+  .nav-bar {
+    margin-bottom: 20px;
+  }
+
+  .note-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+
+  .note-card {
+    height: 180px;
+  }
+}
+
