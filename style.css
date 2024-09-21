@@ -266,7 +266,7 @@ form input {
 
 .dash {
   width: 15%;
-  height: 101vh; 
+  height: 109vh; 
   background-color: #00b594;
   float: left;
   display: flex;
@@ -522,7 +522,7 @@ form input {
 .yellow-dot {
   position: absolute;
   bottom: 1px;
-  left: -100px;
+  left: -80px;
   width: 20px;
   height: 20px;
   background-color: rgb(237, 146, 0);
@@ -531,13 +531,14 @@ form input {
 
 .container {
   position: relative;
+  font-family: 'Moderustic', sans-serif;
   max-width: 700px;
   margin: 0 auto;
   width: 100%;
   background: #fff;
   padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  
+  
 }
 
 .container header {
@@ -573,7 +574,7 @@ form input {
 }
 .form .column {
   display: flex;
-  column-gap: 15px;
+  column-gap: 40px;
 }
 .form .gender-box {
   margin-top: 20px;
@@ -594,7 +595,7 @@ form input {
   column-gap: 5px;
 }
 .gender input {
-  accent-color: #40A578;
+  accent-color:  #008f76;
 }
 .form :where(.gender input, .gender label) {
   cursor: pointer;
@@ -623,10 +624,10 @@ form input {
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
-  background: #40A578;
+  background-color: #00b594;
 }
 .form button:hover {
-  background: rgb(88, 56, 250);
+  background-color: #008f76;
 }
 
 @media screen and (max-width: 500px) {
