@@ -579,30 +579,46 @@ form input {
 .form .gender-box {
   margin-top: 20px;
 }
+
 .gender-box h3 {
   color: #333;
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 8px;
 }
-.form :where(.gender-option, .gender) {
+
+
+.form .gender-option {
   display: flex;
   align-items: center;
-  column-gap: 50px;
+  gap: 30px; 
   flex-wrap: wrap;
 }
+
 .form .gender {
-  column-gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px; 
 }
-.gender input {
-  accent-color:  #008f76;
+
+.gender input[type="radio"] {
+  accent-color: #008f76;
+  cursor: pointer;
+  width: 20px;  
+  height: 20px; 
 }
-.form :where(.gender input, .gender label) {
+
+.form .gender input,
+.form .gender label {
   cursor: pointer;
 }
+
 .gender label {
-  color: #707070;
+  font-size: 1.1rem; 
+  font-weight: 500;  
+  color:#333;
 }
+
 .address :where(input, .select-box) {
   margin-top: 15px;
 }
