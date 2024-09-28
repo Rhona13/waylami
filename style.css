@@ -68,8 +68,11 @@ nav ul li a:hover {
 nav ul li a.active {
   color: #503c9b;
   text-decoration: underline;
+  
 }
-
+.active{
+  max-width: 100%;
+}
 .home-image1 {
   width: 100%;
   height: 90vh;
@@ -147,21 +150,18 @@ nav ul li a.active {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
   
 }
 .content{
   margin: 0 auto;
-  width: 37%;  
-  padding: 25px;
+  width: 30%;  
+  padding: 30px;
   align-items: center;
   justify-content: center;
   background-color:  rgba(226, 254, 223, 0.986);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-
-
-
-
+  border-radius: 8px;  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  max-width: 100%;
 }
 
 .signen {
@@ -184,6 +184,7 @@ form label {
   font-size: 17px;
   font-weight: 800;
   color: black;
+  max-width: 100%;
 }
 
 form input {
@@ -195,11 +196,13 @@ form input {
   box-sizing: border-box;
   border-color: #c5c5c5;
   border-radius: 4px;
+  max-width: 100%;
 }
 
 .box {
   display: flex;
   margin-top: 10px;
+  max-width: 100%;
 }
 
 .box input[type='checkbox'] {
@@ -262,12 +265,13 @@ form input {
   color: #2900bd;
 }
 
-.yup {
+.signn {
   display: flex;
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 80px;
   font-weight: 800;
+  max-width: 100%;
 }
 
 /*this part is the dashboard */
@@ -284,6 +288,8 @@ form input {
   font-optical-sizing: auto;
   font-style: normal;
   border-radius: 4px;
+  
+  
 }
 
 .in:hover {
@@ -296,7 +302,7 @@ form input {
 
 .dash {
   width: 15%;
-  height: 109vh; 
+  height: 100vh; 
   background-color: #00b594;
   float: left;
   display: flex;
@@ -416,6 +422,7 @@ form input {
   justify-content: space-between;
   align-items: center;
   padding-right: 20px;
+  background-color: rgba(226, 254, 223, 0.986);;
 }
 
 .search-bar {
@@ -488,6 +495,7 @@ form input {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px; 
   padding: 22px; 
+  background-color: rgba(226, 254, 223, 0.986);;
 }
 
 .note-card {
@@ -566,10 +574,13 @@ form input {
   font-family: 'Moderustic', sans-serif;
   max-width: 700px;
   margin: 0 auto;
-  width: 100%;  padding: 25px; 
+  width: 100%; 
+  height: 90vh ;
+  padding: 25px; 
   background-color: rgba(226, 254, 223, 0.986);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transform: translateY(-20px);
 }
 
 .container header {
