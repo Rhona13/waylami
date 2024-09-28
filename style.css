@@ -9,6 +9,7 @@
   max-width: 1920px;
   height: auto;
   margin: 0 auto;
+  background:url(noteit.jpg);
 }
   
 span {
@@ -18,6 +19,7 @@ span {
 .home {
   width: 100%;
   height: 10vh;
+ 
 }
 
 .home h1 {
@@ -77,20 +79,26 @@ nav ul li a.active {
 }
 
 .home-image1 img {
-  width: 730px;
-  height: 580px;
+  width: 800px;
+  height: 750px;
   margin-right: 95px;
   margin-bottom: 50px;
+  border-radius: 8px;
+  
+ 
 }
 
 .note {
   margin-bottom: 50px;
   margin-left: 95px;
-  background-color: #e8f4ff;
+  background-color:  rgba(226, 254, 223, 0.986);
   padding: 60px;
   box-sizing: border-box;
   text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
+
 
 .note h2 {
   font-family: 'Moderustic', sans-serif;
@@ -131,12 +139,29 @@ nav ul li a.active {
   background-color: #008f76;
 }
 
+/*this part is the sign-in */
+
 .sign {
   width: 100%;
   height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+.content{
+  margin: 0 auto;
+  width: 37%;  
+  padding: 25px;
+  align-items: center;
+  justify-content: center;
+  background-color:  rgba(226, 254, 223, 0.986);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+
+
+
 }
 
 .signen {
@@ -157,7 +182,8 @@ form label {
   display: flex;
   margin-top: 20px;
   font-size: 17px;
-  color: #c5c5c5;
+  font-weight: 800;
+  color: black;
 }
 
 form input {
@@ -182,7 +208,7 @@ form input {
   width: 20px;
   height: 20px;
   background-color: #fff;
-  border: 2px solid #c5c5c5;
+  border: 2px solid gray;
   border-radius: 2px;
   cursor: pointer;
   position: relative;
@@ -209,11 +235,12 @@ form input {
 
 .box p {
   margin-left: 10px;
-  color: #c5c5c5;
+  color: black;
   font-family: 'Nunito', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 16px;
+  font-weight: 500;
 }
 
 .box li {
@@ -240,7 +267,10 @@ form input {
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 80px;
+  font-weight: 800;
 }
+
+/*this part is the dashboard */
 
 .in {
   display: inline-block;
@@ -529,16 +559,17 @@ form input {
   border-radius: 50%;
 }
 
+/*this part is the Registration */
+
 .container {
   position: relative;
   font-family: 'Moderustic', sans-serif;
   max-width: 700px;
   margin: 0 auto;
-  width: 100%;
-  background: #fff;
-  padding: 25px;
-  
-  
+  width: 100%;  padding: 25px; 
+  background-color: rgba(226, 254, 223, 0.986);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .container header {
@@ -635,86 +666,127 @@ form input {
   width: 100%;
   color: #fff;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 700;
   margin-top: 30px;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
   background-color: #00b594;
+  border-radius:5px ;
 }
 .form button:hover {
   background-color: #008f76;
 }
 
-@media screen and (max-width: 500px) {
-  .form .column {
-    flex-wrap: wrap;
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  
+  /* Adjusting the main container for smaller screens */
+  .main {
+    max-width: 100%;
+    padding: 10px;
+    background-size: cover; /* Adjust background image scaling */
   }
-  .form :where(.gender-option, .gender) {
-    row-gap: 15px;
-  }
-}
 
-
-
-@media (max-width: 768px) {
+  /* Responsive typography */
   .home h1 {
     font-size: 32px;
     margin-left: 20px;
+    transform: translateY(10px);
   }
 
+  /* Adjusting navigation layout */
   .home nav {
+    transform: translateX(0) translateY(0);
     justify-content: center;
-    transform: translateX(0) translateY(-10px);
   }
 
   .home nav ul {
-    gap: 20px;
+    gap: 30px;
   }
 
   .home nav ul li a {
-    font-size: 16px;
+    font-size: 18px;
   }
 
+  /* Image scaling for mobile */
   .home-image1 img {
-    width: 300px;
-    height: 230px;
+    width: 90%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 30px;
   }
 
+  /* Adjusting note section */
   .note {
-    margin-left: 20px;
+    margin-left: 0;
     padding: 40px;
   }
 
   .note h2 {
-    font-size: 50px;
+    font-size: 48px;
   }
 
   .note p {
-    font-size: 16px;
+    font-size: 18px;
+    max-width: 100%;
   }
 
+  /* Adjust button */
   .tsk {
-    padding: 7px 30px;
+    padding: 7px 40px;
   }
 
+  /* Sign-in form adjustments */
+  .content {
+    width: 90%;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  /* Responsive dashboard */
   .dash {
     width: 100%;
     height: auto;
-    float: none;
+    padding: 20px;
   }
 
-  .nav-bar {
-    margin-bottom: 20px;
+  .dash h1 {
+    font-size: 40px;
   }
 
+  .nav-bar li a {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+
+  /* Adjust search bar */
+  .search-bar input[type="text"] {
+    width: 100%;
+  }
+
+  /* Responsive note grid */
   .note-grid {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
   }
 
   .note-card {
-    height: 180px;
+    height: auto;
+  }
+
+  /* Adjust container for registration form */
+  .container {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .container header {
+    font-size: 36px;
+  }
+
+  .form button {
+    padding: 15px;
   }
 }
-
